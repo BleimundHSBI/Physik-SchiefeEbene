@@ -22,8 +22,8 @@ $\vec{F}_G$ lässt sich in eine zur Ebene parallele und eine senkrechte Komponen
 Da für $\vec{F}_{G} = m \cdot \vec{g}$ gilt, gilt ebenfalls:
 
 \begin{align}
-    \abs{\vec{F}_{N}} = m \cdot g \cdot \cos{\alpha} \label{F_N} \\
-    \abs{\vec{F}_{HA}} = m \cdot g \cdot \sin{\alpha} \label{F_HA}
+    \abs{\vec{F}_{N}} = m \cdot g \cdot \cos{\alpha} \label{eq:F_N} \\
+    \abs{\vec{F}_{HA}} = m \cdot g \cdot \sin{\alpha} \label{eq:F_HA}
 \end{align}
 
 wobei $\alpha$ der Neigungswinkel der Ebene ist.
@@ -35,20 +35,20 @@ Solange der Körper sich nicht bewegt wird $\vec{F}_{HA}$ komplett durch die Haf
         \abs{\vec{F}_{HR}^{max}} &= \mu_{HR} \cdot \abs{\vec{F}_{N}} \text{ bzw.}\\
         \abs{\vec{F}_{HR}} &\leq \mu_{HR} \cdot \abs{\vec{F}_{N}}
     \end{align}
-    \label{F_HR}
+    \label{eq:F_HR}
 \end{subequations}
 $\mu_{HR}$ hängt von Materialien, der Oberflächenbeschaffenheiten, sowie der Temperatur ab. \newline
 Experimentell gilt für $\mu_{HR}$:
 \begin{align}
     \mu_{HR} = \tan{\alpha_{max}}
-    \label{MU_HR}
+    \label{eq:MU_HR}
 \end{align}
 wobei $\alpha_{max}$ der größte Winkel ist, bei dem der Körper noch ruht.\newline
 
 Sobald $\vec{F}_{HA}$ größer als $\abs{\vec{F}_{HR}^{max}}$ wird fängt der Körper an zu gleiten und es gilt die Gleitreibung $\vec{F}_{GR}$:
 \begin{align}
     \abs{\vec{F}_{GR}} = \mu_{GR} \cdot \abs{\vec{F}_{N}}
-    \label{F_GR}
+    \label{eq:F_GR}
 \end{align}
 $\mu_{GR}$ ist typischerweise kleiner als $\mu_{HR}$. Es wird angenommen, dass $\vec{F}_{R}$ bei einer trockenen Oberfläche unabhängig von der Geschwindigkeit des Körpers ist.\smallskip
 
@@ -68,7 +68,7 @@ Die Beschleunigung $a$ wird als Funktion der zurückgelegten Strecke $l$ und der
 \begin{align}
     l = \frac{1}{2} a \cdot t_{mess}^2
 \end{align}
-Bei berücksichtigung der Formeln \autoref{F_N} und \autoref{F_GR}, ist es möglich den $\mu_{GR}$ zu bestimmen:
+Bei berücksichtigung der Formeln \autoref{eq:F_N} und \autoref{eq:F_GR}, ist es möglich den $\mu_{GR}$ zu bestimmen:
 \begin{align}
     \mu_{GR} = \tan{a} - \frac{2\cdot l}{g \cdot t_{mess}^2 \cdot \cos{a}}
 \end{align}
