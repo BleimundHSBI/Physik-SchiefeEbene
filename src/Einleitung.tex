@@ -12,39 +12,20 @@ Drei unterschiedliche Kräfte wirken dabei auf den Körper(siehe \autoref{fig:Kr
 
 \usetikzlibrary{angles,quotes}
 \begin{figure}
-    \begin{center}
-        \begin{tikzpicture}
-            \draw [fill, gray, rotate around={-27:(4,3)}](4,3) rectangle (5,3.5);
-            \draw   (0,5) -- (0,0) -- (10,0);
-            \draw [line width=0.8mm](0,5) -- (10,0);
-            \draw  [domain=0:90] plot ({cos(\x)}, {sin(\x)});
-            \draw [fill](0.4,0.4) circle (1pt);
-            \draw [domain=153:180] plot ({10+2.5*cos(\x)}, {2.5*sin(\x)});
-            \draw (8,0.5) node {$\alpha$};
-            \draw [-stealth, red, line width=0.5mm, rotate around={-27:(4.5,3)}](4.5,3)--(3,3);
-            \draw [red, rotate around={-27:(4.5,3)}](2.8,3.5) node {$\vec{F}_{R}$};
-            \draw [-stealth, blue, line width=0.5mm, rotate around={-27:(4.5,3)}](4.5,3)--(4.5,5);
-            \draw [blue, rotate around={-27:(4.5,3)}](5,4) node {$\vec{F}_{N}$};
-            \draw [dotted, rotate around={-27:(4.5,3)}](4.5,3)--(4.5,1.3)--(5.4,1.3);
-            \draw [-stealth, green, line width=0.5mm](4.5,3)--(4.5,1);
-            \draw [green](5,2) node {$\vec{F}_{G}$};
-        \end{tikzpicture}
-        \caption[Kräfte]{Kräfte, die auf den Körper Wirken}
-        \label{fig:Kräfte}
-    \end{center}
+    \centering 
+    \input{images/KräfteAmKörper.tex}
+    \caption[Kräfte]{Kräfte, die auf den Körper Wirken}
+    \label{fig:Kräfte}
 \end{figure}
 
-$\vec{F}_G$ lässt sich in eine zur Ebene parallele und eine senkrechte Komponente unterteilen. Die senkrechte Komponente von $\vec{F}_G$ wird durch $\vec{F}_N$ kompensiert, da $\vec{F}_N$ die selbe Kraft senkrecht zur Ebene nach oben auf den Körper ausübt wie $\vec{F}_G$ senkrecht zur Ebene nach unten. Der zur Ebene parallele teil von $\vec{F}_G$ wird als Hangabtriebskraft $\vec{F}_{HA}$ bezeichnet. $\vec{F}_R$ wirkt in Tangentialrichtung und hemmt somit die Bewegung des Körpers.
-\newline
+$\vec{F}_G$ lässt sich in eine zur Ebene parallele und eine senkrechte Komponente unterteilen. Die senkrechte Komponente von $\vec{F}_G$ wird durch $\vec{F}_N$ kompensiert, da $\vec{F}_N$ die selbe Kraft senkrecht zur Ebene nach oben auf den Körper ausübt wie $\vec{F}_G$ senkrecht zur Ebene nach unten. Der zur Ebene parallele teil von $\vec{F}_G$ wird als Hangabtriebskraft $\vec{F}_{HA}$ bezeichnet. $\vec{F}_R$ wirkt in Tangentialrichtung und hemmt somit die Bewegung des Körpers.\newline
 Da für $\vec{F}_{G} = m \cdot \vec{g}$ gilt, gilt ebenfalls:
-\begin{subequations}
-    \begin{equation}
-        \abs{\vec{F}_{N}} = m \cdot g \cdot \cos{\alpha}
-    \end{equation}\label{F_N}
-    \begin{equation}
-        \abs{\vec{F}_{HA}} = m \cdot g \cdot \sin{\alpha}
-    \end{equation}\label{F_HA}
-\end{subequations}
+
+\begin{align}
+    \abs{\vec{F}_{N}} = m \cdot g \cdot \cos{\alpha} \label{F_N} \\
+    \abs{\vec{F}_{HA}} = m \cdot g \cdot \sin{\alpha} \label{F_HA}
+\end{align}
+
 wobei $\alpha$ der Neigungswinkel der Ebene ist.
 Es kann zwischen Haftreibung, Gleitreibung und Rollreibung unterschieden werden, wobei sich in diesem Versuch nur auf Haft- und Gleitreibung fokusiert wird.
 \newline
@@ -77,25 +58,10 @@ Die resultierende Gesamtkraft $\vec{F}_{res}$ (siehe \autoref{fig:Gesamtkraft}) 
 \end{align}
 
 \begin{figure}[ht]
-    \begin{center}
-        \begin{tikzpicture}
-            \draw [fill, gray, rotate around={-27:(4,3)}](4,3) rectangle (5,3.5);
-            \draw   (0,5) -- (0,0) -- (10,0);
-            \draw [line width=0.8mm](0,5) -- (10,0);
-            \draw  [domain=0:90] plot ({cos(\x)}, {sin(\x)});
-            \draw [fill](0.4,0.4) circle (1pt);
-            \draw [domain=153:180] plot ({10+2.5*cos(\x)}, {2.5*sin(\x)});
-            \draw (8,0.5) node {$\alpha$};
-            \draw [-stealth, red, line width=0.5mm, rotate around={-27:(4.5,3)}](4.5,3)--(3,3);
-            \draw [red, rotate around={-27:(4.5,3)}](2.8,3.5) node {$\vec{F}_{GR}$};
-            \draw [-stealth, cyan, line width=0.5mm, rotate around={-27:(4.5,3)}](4.5,3)--(6.5,3);
-            \draw [cyan, rotate around={-27:(4.5,3)}](5.8,3.5) node {$\vec{F}_{HA}$};
-            \draw [line width=0.5mm, -stealth, rotate around={-27:(4.5,3)}] (8,3) -- (10,3);
-            \draw [rotate around={-27:(4.5,3)}](9,3.5) node {$\vec{F}_{res}$};
-        \end{tikzpicture}
-        \caption[Resultierende Gesamtkraft]{Aus $\vec{F}_{GR}$ und $\vec{F}_{HA}$ resultierende Gesamtkraft $\vec{F}_{res}$}
-        \label{fig:Gesamtkraft}
-    \end{center}
+    \centering
+    \input{images/resultierendeKräfteAmKörper.tex}
+    \caption[Resultierende Gesamtkraft]{Aus $\vec{F}_{GR}$ und $\vec{F}_{HA}$ resultierende Gesamtkraft $\vec{F}_{res}$}
+    \label{fig:Gesamtkraft}
 \end{figure}
 
 Die Beschleunigung $a$ wird als Funktion der zurückgelegten Strecke $l$ und der benötigten Zeit $t_{mess}$ ausgedrückt, da gilt:

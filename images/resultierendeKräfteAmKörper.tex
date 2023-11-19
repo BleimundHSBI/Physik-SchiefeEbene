@@ -1,0 +1,15 @@
+\begin{tikzpicture}
+    \draw [fill, gray, rotate around={-27:(4,3)}](4,3) rectangle (5,3.5);
+    \draw   (0,5) -- (0,0) -- (10,0);
+    \draw [line width=0.8mm](0,5) -- (10,0);
+    \draw  [domain=0:90] plot ({cos(\x)}, {sin(\x)});
+    \draw [fill](0.4,0.4) circle (1pt);
+    \draw [domain=153:180] plot ({10+2.5*cos(\x)}, {2.5*sin(\x)});
+    \draw (8,0.5) node {$\alpha$};
+    \draw [-stealth, red, line width=0.5mm, rotate around={-27:(4.5,3)}](4.5,3)--(3,3);
+    \draw [red, rotate around={-27:(4.5,3)}](2.8,3.5) node {$\vec{F}_{GR}$};
+    \draw [-stealth, cyan, line width=0.5mm, rotate around={-27:(4.5,3)}](4.5,3)--(6.5,3);
+    \draw [cyan, rotate around={-27:(4.5,3)}](5.8,3.5) node {$\vec{F}_{HA}$};
+    \draw [line width=0.5mm, -stealth, rotate around={-27:(4.5,3)}] (8,3) -- (10,3);
+    \draw [rotate around={-27:(4.5,3)}](9,3.5) node {$\vec{F}_{res}$};
+\end{tikzpicture}
