@@ -15,4 +15,15 @@ In \autoref{tab:statZeit} sind die Ergebnisse der statischen Auswertung zu sehen
 
 \subsubsection{Berechnung des Gleitreibungskoeffizienten und Größtfehlers}
 
+\begin{align}
+    \mu_{GR} = tan(\alpha) - \frac{2 \cdot l}{g \cdot t_{mess}^2 \cdot cos(\alpha)} \quad \Rightarrow
+  \end{align}
+  \begin{equation}
+    \begin{alignedat}{2}
+      \Delta \mu_{GR} &= &\quad \abs*{\frac{\partial \mu_{GR}}{\partial l} \cdot \Delta l}_{t_{mess},\alpha = konst.} + \abs*{\frac{\partial \mu_{GR}}{\partial t_{mess}} \cdot \Delta t_{mess}}_{l,\alpha = konst.} + \abs*{\frac{\partial \mu_{GR}}{\partial \alpha} \cdot \alpha}_{t_{mess},l = konst.}\\
+      &= &\, \abs*{-\frac{2}{g \cdot t_{mess}^2 \cdot cos(\alpha)}\cdot \Delta l}_{t_{mess},\alpha = konst.} + \abs*{\frac{4 \cdot l}{g \cdot t_{mess}^2 \cdot cos(\alpha)}}_{l,\alpha = konst.} \\ 
+      &\quad  &+ \, \abs*{\frac{1}{cos^2\left( \alpha \cdot  \frac{\pi}{180} \right)} -\frac{2 \cdot l \cdot sin(\alpha)}{g \cdot t_{mittel}^2 \cdot cos^2(\alpha)} \cdot \Delta \alpha}_{t_{mess},l = konst.}
+    \end{alignedat}
+  \end{equation}
+
 \subsubsection{Angabe des Endergebnisses}
