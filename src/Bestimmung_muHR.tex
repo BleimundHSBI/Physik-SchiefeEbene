@@ -17,4 +17,20 @@ In \autoref{tab:statWinkel} sind die Ergebnisse der statischen Auswertung zu seh
 
 \subsubsection{Berechnung des Haftreibungskoeffizienten und Größtfehlers}
 
+Die Haftreibungskraft $\vec{F}_{HR}$ wirkt dann, wenn sich der Körper nicht bewegt. Da er sich nicht bewegt, kompensiert $\vec{F}_{HR}$ die Hangabtriebskraft $\vec{F}_{HA}$. Die Haftreibungskraft hat einen maximalen Wert von $\vec{F}_{HR}^{max}$, welche Sie nicht überschreiten kann. Daher kann mit \autoref{eq:F_HR}, \autoref{eq:F_HA} und der \autoref{fig:Kräfte}, $\mu_{HR}$ hergeleitet werden.
+
+\begin{subequations}
+  \begin{align*}
+    \abs{\vec{F}_{HR}^{max}} = \abs{\vec{F}_{HA}} &= \mu_{HR} \cdot \abs{\vec{F}_{N}} \quad \text{mit} & \abs{\vec{F}_{HA}} = m \cdot g \cdot sin(\alpha_{max}) \, , \, \abs{\vec{F}_{N}} &= m \cdot g \cdot cos(\alpha_{max})
+  \end{align*}
+  \vspace{-1cm}
+  \begin{alignat*}{3}
+  &\Rightarrow &\quad m \cdot g \cdot sin(\alpha_{max}) &= \mu_{HR} \cdot m \cdot g \cdot cos(\alpha_{max}) \\
+  &\Leftrightarrow &\quad \frac{m \cdot g \cdot sin(\alpha_{max})}{m \cdot g \cdot cos(\alpha_{max})} &= \mu_{HR}\\
+  &\Leftrightarrow &\quad tan(\alpha_{max}) &= \mu_{HR}
+  \end{alignat*}
+\end{subequations}
+
+wobei $\alpha_{max}$ der größte Winkel ist, bei dem der Körper noch ruht.\newline
+
 \subsubsection{Angabe des Endergebnisses}
