@@ -67,6 +67,15 @@
     \renewcommand{\thesection}{\Alph{section}}
 }%
 
+\newlength{\conditionwd}
+\newenvironment{conditions}[1][mit:]
+  {%
+   #1\tabularx{\textwidth-\widthof{#1}}[t]{
+     >{$}l<{$} @{${}={}$} X@{}
+   }%
+  }
+  {\endtabularx\\[\belowdisplayskip]}
+
 \tikzset{%
   block/.style    = {draw, thick, rectangle, minimum height = 3em,
     minimum width = 3em},
