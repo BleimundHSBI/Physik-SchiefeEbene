@@ -26,7 +26,7 @@ Die Haftreibungskraft $\vec{F}_{HR}$ wirkt dann, wenn sich der Körper nicht bew
 \begin{alignat}{3}
   &\Rightarrow &\quad m \cdot g \cdot \sin(\alpha_{max}) &= \mu_{HR} \cdot m \cdot g \cdot cos(\alpha_{max}) \nonumber \\
   &\Leftrightarrow &\quad \frac{m \cdot g \cdot \sin(\alpha_{max})}{m \cdot g \cdot \cos(\alpha_{max})} &= \mu_{HR}\nonumber \\ 
-  &\Leftrightarrow &\quad \tan(\alpha_{max}) &= \mu_{HR}
+  &\Leftrightarrow &\quad \tan(\alpha_{max}) &= \mu_{HR} \label{eq:muHR}
 \end{alignat}
 
 wobei $\alpha_{max}$ der größte Winkel ist, bei dem der Körper noch ruht.\newline
@@ -36,13 +36,13 @@ Da $\mu_{GR}$ mit gemessenen Werten berechnet wird, muss eine Größtfehlerbetra
 
 \begin{align}
 \mu_{\mathrm{HR}} &=\tan \left(\alpha_{\max }\right) \quad \Rightarrow \nonumber \\
-\Delta \mu_{\mathrm{HR}}&=\left|\frac{\partial \mu_{\mathrm{HR}}}{\partial \alpha_{\max }} \cdot \Delta \alpha_{\max }\right|=\abs*{\frac{1}{\cos ^{2}\left(\alpha_{\max }\right)} \cdot \Delta \alpha_{\max }}
+\Delta \mu_{\mathrm{HR}}&=\left|\frac{\partial \mu_{\mathrm{HR}}}{\partial \alpha_{\max }} \cdot \Delta \alpha_{\max }\right|=\abs*{\frac{1}{\cos ^{2}\left(\alpha_{\max }\right)} \cdot \Delta \alpha_{\max }} \label{eq:DeltaMuHR}
 \end{align}
 \begin{conditions}
 \alpha_{max} & maximaler Neigungswinkel. Angegeben im Bogenmaß.
 \end{conditions}
 
-Mit 
+In \autoref{tab:muGRWerte} wird mit \autoref{eq:DeltaMuHR} und \autoref{eq:muHR}, $\mu_{HR}$ und $\Delta \mu_{HR}$ für alle drei Oberflächen berechnet.
 
 \begin{table}[h]
   \center 
