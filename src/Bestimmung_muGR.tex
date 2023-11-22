@@ -19,7 +19,10 @@ Die Gleitreibungskraft $\vec{F}_{GR}$ wirkt, wenn sich der Körper bewegt. Sie i
 
 \begin{align}
   \mu_{GR} = \tan{a} - \frac{2\cdot l}{g \cdot t_{mess}^2 \cdot \cos{a}}
+  \label{eq:muGR}
 \end{align}
+
+Da $l$ und $t_{mess}$ gemessen werden, muss eine Größtfehlerbetrachtung gemacht werden. Dafür gilt:
 
 \begin{align}
   \mu_{GR} = tan(\alpha) - \frac{2 \cdot l}{g \cdot \bar{t}_{mess}^2 \cdot \cos(\alpha)} \quad \Rightarrow
@@ -30,11 +33,21 @@ Die Gleitreibungskraft $\vec{F}_{GR}$ wirkt, wenn sich der Körper bewegt. Sie i
     &= &\, \abs*{-\frac{2}{g \cdot \bar{t}_{mess}^2 \cdot \cos(\alpha)}\cdot \Delta l}_{\bar{t}_{mess},\alpha = konst.} + \abs*{\frac{4 \cdot l}{g \cdot \bar{t}_{mess}^2 \cdot \cos(\alpha)} \cdot \Delta \bar{t}_{mess}}_{l,\alpha = konst.} \\ 
     &\quad  &+ \, \abs*{\frac{1}{\cos^2( \alpha )} -\frac{2 \cdot l \cdot \sin(\alpha)}{g \cdot \bar{t}_{mess}^2 \cdot \cos^2(\alpha)} \cdot \Delta \alpha}_{\bar{t}_{mess},l = konst.}
   \end{alignedat}
+  \label{eq:DeltaMuGR}
 \end{equation}
 \begin{conditions}
   \bar{t}_{mess} & Mittelwert der einzelnen Messungen. \autoref{tab:statZeit}\\
   \Delta \bar{t}_{mess} & Standardabweichung des Mittelwertes. \autoref{tab:statZeit}\\
   \alpha & Eingestellter Winkel in Bogenmaß.
 \end{conditions}
+
+In \autoref{tab:EndergebnissMuGR} werden die Gleitreibungskoeffizienten $\mu_{GR}$ und Größtfehlerbetrachtung, mit \autoref{eq:muGR} und \autoref{eq:DeltaMuGR}, für alle drei Oberflächen gemacht.
+
+\begin{table}[h]
+  \center 
+  \caption[Endergebnisse des Gleitreibungskoeffizienten]{Angabe des Endergebnisses für den Gleitreibungskoeffizienten $\mu_{GR}$}
+  \input{tables/EndergebnissMuGR.tex}
+  \label{tab:EndergebnissMuGR}
+\end{table}
 
 \subsubsection{Angabe des Endergebnisses}
